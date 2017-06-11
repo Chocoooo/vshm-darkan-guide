@@ -53,11 +53,11 @@ module.exports = function VSNMLakanGuide(dispatch) {
          { 
                 console.log(event.skill);
         
-             if(sideAttacks.includes(event.skill) && !attack1 && !attack2)
+             if(sideAttacks.includes(event.skill) && !attack1)
              {
                  attack1 = true;
              }
-             else if(sideAttacks.includes(event.skill) && attack1)
+             else if(sideAttacks.includes(event.skill) && attack1 && !attack2)
              {
                  attack2 = true;
              }
