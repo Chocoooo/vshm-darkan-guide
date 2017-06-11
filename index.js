@@ -1,6 +1,6 @@
 const BossId = [981, 1000]; // Darkan HM
 
-module.exports = function VSNMLakanGuide(dispatch) {
+module.exports = function VSHMdarkanGuide(dispatch) {
     
     //Messages
     let warningAt50 = 'Boss is under 50%! Prepare for double side attacks';
@@ -28,6 +28,7 @@ module.exports = function VSNMLakanGuide(dispatch) {
                 
                 if(bossHp > 0.50)
                 {
+                    doubleSwingsWarned = false;
                     giveWarnings = false;
                 }
                 else if(bossHp <= 0.50 && !doubleSwingsWarned)
