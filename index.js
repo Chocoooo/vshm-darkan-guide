@@ -51,9 +51,7 @@ module.exports = function VSHMdarkanGuide(dispatch) {
              return;
          
          if(boss.id - event.source == 0 && giveWarnings)
-         { 
-                console.log(event.skill);
-        
+         {     
              if(sideAttacks.includes(event.skill) && !attack1)
              {
                  attack1 = true;
